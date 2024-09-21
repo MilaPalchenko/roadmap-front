@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+    --secondary-titles-color: hsl(120, 35%, 32%);
+    --school-and-company-color: hsl(206, 42%, 57%);
+    --links-color: hsl(279, 25%, 54%);
+    --black: hsl(0, 0%, 0%);
+}
+
+html {
+    font-size: 62.5%; /* to set 10px = 1rem */
+}
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 2px solid var(--black);
+    font-family: var(--main-font);
+
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 5rem;
+    width: 60%;
+}
+
+.separation {
+    border: 2px solid var(--black);
+
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.name {
+    font-size: 4rem;
+    font-weight: 500;
+
+    margin: 2rem;
+    margin-left: 0;
+}
+
+.secondary-title {
+    color: var(--secondary-titles-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    margin: 1.5rem;
+    margin-top: 2.5rem;
+    margin-left: 0;
+}
+
+.contacts-info {
+    font-size: 1.7rem;
+    font-style: normal;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+.school,
+.company {
+    font-size: 1.7rem;
+    line-height: 4rem;
+
+    &--title {
+        color: var(--school-and-company-color);
+        font-size: 2.1rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+    &--skills { 
+        padding: 0.5rem;
+        padding-left: 0;
+    }
+}
+
+li {
+    font-size: 1.7rem;
+    margin-left: 1.7rem;
+    padding: 0.3rem 0;
+}
+
+.links {
+    color: var(--links-color);
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+ }
