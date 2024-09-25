@@ -1,0 +1,19 @@
+
+
+.header-wrap { 
+    background-color: hsl(257, 41%, 73%);
+}
+
+.nav { 
+    @include flex;
+
+    font-size: 2rem;
+
+    &__items { 
+        @include fd-r-m-c;
+
+        font-size: 2rem;
+    }
+}
+
+

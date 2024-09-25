@@ -1,0 +1,17 @@
+.header-wrap {
+  background-color: hsl(257, 41%, 73%);
+}
+
+.nav {
+  display: flex;
+  font-size: 2rem;
+}
+.nav__items {
+  flex-direction: row;
+  font-size: 2rem;
+}
+@media screen and (max-width: 40rem) {
+  .nav__items {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=index.css.map */

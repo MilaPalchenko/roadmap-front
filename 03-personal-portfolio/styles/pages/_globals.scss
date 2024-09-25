@@ -1,0 +1,18 @@
+@mixin flex {
+    display: flex;
+}
+
+@mixin fd-c {
+    flex-direction: column;
+}
+
+@mixin fd-r {
+    flex-direction: row;
+}
+
+@mixin fd-r-m-c {
+    flex-direction: row;
+    @media screen and (max-width: 40rem) {
+        flex-direction: column;
+    }
+}
