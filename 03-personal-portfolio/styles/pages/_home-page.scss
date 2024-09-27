@@ -1,19 +1,166 @@
+body {
+    @include flex;
+    @include fd-c;
+    @media (max-width: 42rem) {
+        font-size: 2rem;
+    }
 
-
-.header-wrap { 
-    background-color: hsl(257, 41%, 73%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
 }
 
-.nav { 
-    @include flex;
-
-    font-size: 2rem;
-
-    &__items { 
-        @include fd-r-m-c;
-
-        font-size: 2rem;
+.header-wrapper {
+    @include fd-c;
+    background-color: hsl(257, 41%, 73%);
+    @media (max-width: 42rem) {
+        margin-bottom: 5rem;
+        width: 100vw;
     }
 }
 
+.nav {
+    @include flex;
+    @include fd-r;
+    justify-content: space-between;
+    @media (max-width: 42rem) {
+        @include fd-c;
+        text-align: center;
+    }
 
+    &--my-name {
+        padding: 1rem;
+
+        @media (max-width: 42rem) {
+        font-size: 3rem;
+        }
+    }
+
+    &__item {
+        padding: 1.5rem;
+    }
+    &__link {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.intro {
+    @include flex;
+    @include fd-c;
+    align-items: center;
+    justify-content: center;
+    
+    height: 50vh;
+    width: 100vw;
+    @media (max-width: 42rem) {
+        height: 15vh;
+    }
+}
+
+main {
+    @include flex;
+    @include fd-c;
+
+    .main-wrapper {
+        @include flex;
+        @include fd-r;
+
+        height: 50vh;
+        @media (max-width: 42rem) {
+            @include fd-c;
+            height: 200%;
+        }
+        .projects {
+            margin: 2rem;
+            ul {
+                margin-top: 2rem;
+            }
+            li {
+                border: 0.2rem solid black;
+                border-radius: 1.5rem;
+                list-style: none;
+                margin: 0.2rem 0;
+                padding: 2rem;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+        .work-experience {
+            margin: 2rem;
+
+            article {
+                border: 0.2rem solid black;
+                border-radius: 1.5rem;
+                margin: 2rem 0;
+                padding: 2rem;
+
+                h3 {
+                    padding: 1rem;
+                }
+            }
+        }
+        .education {
+            margin: 2rem;
+            p {
+                margin-top: 2rem;
+            }
+            ul {
+                border: 0.2rem solid black;
+                border-radius: 1.5rem;
+                margin: 2rem 0;
+                padding: 2rem;
+            }
+            li {
+                margin-left: 2rem;
+                padding: 0.4rem;
+            }
+        }
+    }
+    .reviews {
+        @include flex;
+        @include fd-c;
+
+        .quotes-wrapper {
+            @include flex;
+            @include fd-r;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 42rem) {
+                @include fd-c;
+            }
+        }
+        h2 {
+            text-align: center;
+            width: 100vw;
+        }
+        blockquote {
+            border: 0.2rem solid black;
+            border-radius: 1.5rem;
+            margin: 4rem;
+            padding: 2rem 4rem;
+            text-align: justify;
+            width: 40rem;
+            @media (max-width: 42rem) {
+                width: 30rem;
+            }
+            p { 
+                line-height: 2.5rem;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+footer { 
+    p { 
+        margin: 5rem 0;
+        text-align: center;
+        width: 100vw;
+        @media (max-width: 42rem) {
+            margin: 5rem 0;
+        }
+    }
+}

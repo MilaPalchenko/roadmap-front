@@ -1,19 +1,258 @@
-.header-wrap {
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+@media (max-width: 42rem) {
+  body {
+    font-size: 2rem;
+  }
+}
+
+.header-wrapper {
+  flex-direction: column;
   background-color: hsl(257, 41%, 73%);
+}
+@media (max-width: 42rem) {
+  .header-wrapper {
+    margin-bottom: 5rem;
+    width: 100vw;
+  }
 }
 
 .nav {
   display: flex;
-  font-size: 2rem;
-}
-.nav__items {
   flex-direction: row;
-  font-size: 2rem;
+  justify-content: space-between;
 }
-@media screen and (max-width: 40rem) {
-  .nav__items {
+@media (max-width: 42rem) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.nav--my-name {
+  padding: 1rem;
+}
+@media (max-width: 42rem) {
+  .nav--my-name {
+    font-size: 3rem;
+  }
+}
+.nav__item {
+  padding: 1.5rem;
+}
+.nav__link {
+  color: black;
+  text-decoration: none;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
+}
+@media (max-width: 42rem) {
+  .intro {
+    height: 15vh;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .main-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+}
+@media (max-width: 42rem) {
+  main .main-wrapper {
+    flex-direction: column;
+    height: 200%;
+  }
+}
+main .main-wrapper .projects {
+  margin: 2rem;
+}
+main .main-wrapper .projects ul {
+  margin-top: 2rem;
+}
+main .main-wrapper .projects li {
+  border: 0.2rem solid black;
+  border-radius: 1.5rem;
+  list-style: none;
+  margin: 0.2rem 0;
+  padding: 2rem;
+}
+main .main-wrapper .projects a {
+  color: black;
+  text-decoration: none;
+}
+main .main-wrapper .work-experience {
+  margin: 2rem;
+}
+main .main-wrapper .work-experience article {
+  border: 0.2rem solid black;
+  border-radius: 1.5rem;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+main .main-wrapper .work-experience article h3 {
+  padding: 1rem;
+}
+main .main-wrapper .education {
+  margin: 2rem;
+}
+main .main-wrapper .education p {
+  margin-top: 2rem;
+}
+main .main-wrapper .education ul {
+  border: 0.2rem solid black;
+  border-radius: 1.5rem;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+main .main-wrapper .education li {
+  margin-left: 2rem;
+  padding: 0.4rem;
+}
+main .reviews {
+  display: flex;
+  flex-direction: column;
+}
+main .reviews .quotes-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 42rem) {
+  main .reviews .quotes-wrapper {
     flex-direction: column;
   }
+}
+main .reviews h2 {
+  text-align: center;
+  width: 100vw;
+}
+main .reviews blockquote {
+  border: 0.2rem solid black;
+  border-radius: 1.5rem;
+  margin: 4rem;
+  padding: 2rem 4rem;
+  text-align: justify;
+  width: 40rem;
+}
+@media (max-width: 42rem) {
+  main .reviews blockquote {
+    width: 30rem;
+  }
+}
+main .reviews blockquote p {
+  line-height: 2.5rem;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 5rem 0;
+  text-align: center;
+  width: 100vw;
+}
+@media (max-width: 42rem) {
+  footer p {
+    margin: 5rem 0;
+  }
+}
+
+.articles-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+@media (max-width: 42rem) {
+  .articles-wrapper {
+    margin: 10rem 0;
+  }
+}
+.articles-wrapper .article {
+  margin: 6rem;
+  text-align: justify;
+  width: 80vw;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
+}
+.contacts-wrapper form {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+  width: 50rem;
+}
+@media (max-width: 42rem) {
+  .contacts-wrapper form {
+    width: 35rem;
+  }
+}
+.contacts-wrapper form label {
+  font-weight: 500;
+}
+.contacts-wrapper form input {
+  border: 0.05 solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.contacts-wrapper form textarea {
+  border-radius: 1rem;
+  padding: 4rem;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+@media (max-width: 42rem) {
+  .projects-wrapper {
+    margin: 3rem;
+  }
+}
+.projects-wrapper .projects {
+  margin: 2rem;
+  width: 60vw;
+}
+.projects-wrapper .projects h2 {
+  padding: 1rem 0;
+}
+.projects-wrapper .projects ul {
+  margin-top: 2rem;
+}
+.projects-wrapper .projects li {
+  border: 0.2rem solid black;
+  border-radius: 1.5rem;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 2rem;
+}
+.projects-wrapper .projects a {
+  color: black;
+  text-decoration: none;
 }
 
 * {

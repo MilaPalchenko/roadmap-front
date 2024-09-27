@@ -16,3 +16,9 @@
         flex-direction: column;
     }
 }
+@mixin fd-c-m-r {
+    flex-direction: column;
+    @media screen and (max-width: 40rem) {
+        flex-direction: row;
+    }
+}

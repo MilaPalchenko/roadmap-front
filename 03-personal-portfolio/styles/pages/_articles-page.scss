@@ -1,0 +1,16 @@
+.articles-wrapper {
+    @include flex;
+    @include fd-c;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    @media (max-width: 42rem) {
+        margin: 10rem 0;
+        }
+    .article {
+        margin: 6rem;
+        text-align: justify;
+        width: 80vw;
+    }
+}
