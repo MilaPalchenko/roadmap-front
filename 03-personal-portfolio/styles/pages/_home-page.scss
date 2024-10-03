@@ -93,11 +93,18 @@ main {
             article {
                 border: 0.2rem solid black;
                 border-radius: 1.5rem;
+                line-height: 3rem;
                 margin: 2rem 0;
                 padding: 2rem;
 
                 h3 {
                     padding: 1rem;
+                }
+                p { 
+                    padding: 0.5rem 0;
+                }
+                a { 
+                    color: rgb(94, 94, 185);
                 }
             }
         }

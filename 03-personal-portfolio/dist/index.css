@@ -100,11 +100,18 @@ main .main-wrapper .work-experience {
 main .main-wrapper .work-experience article {
   border: 0.2rem solid black;
   border-radius: 1.5rem;
+  line-height: 3rem;
   margin: 2rem 0;
   padding: 2rem;
 }
 main .main-wrapper .work-experience article h3 {
   padding: 1rem;
+}
+main .main-wrapper .work-experience article p {
+  padding: 0.5rem 0;
+}
+main .main-wrapper .work-experience article a {
+  color: rgb(94, 94, 185);
 }
 main .main-wrapper .education {
   margin: 2rem;
