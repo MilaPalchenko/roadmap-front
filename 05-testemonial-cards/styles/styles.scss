@@ -1,0 +1,47 @@
+html { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quote { 
+    font-size: 20px;
+}
+
+.small-qt-image { 
+    height: 70px;
+    width: 70px;
+}
+
+
+.testemonial-one {
+    .quote { 
+        background-color: grey;
+        border-radius: 15px;
+        color: white;
+        padding: 20px;
+        width: 450px;
+
+        a { 
+            color: white;
+            text-decoration: none;
+        }
+    }
+    
+    .person-info { 
+        display: grid;
+        grid-template-columns: 90px 250px;
+        grid-template-rows: 40px 110px;
+
+        h3 { 
+            grid-column-start: 2;
+
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        p { 
+            grid-column-start: 2;
+
+            font-size: 20px;
+            margin-top: -1px;
+        }
+    }
+}
