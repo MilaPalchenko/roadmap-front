@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/styles.css">
+    <script defer src="app.js"></script>
     <title>Accessible Form UI</title>
 </head>
 
 <body>
-
-    <form>
+    <form name="formUI" onsubmit=validateForm()>
         <div class="inputs-wrap">
             <div class="group">
                 <label for="full-name">
@@ -49,7 +49,8 @@
             </div>
 
             <div class="submit">
-                <button type="submit" class="submit-btn">Update Profile</button>
+               
+                <input type="submit" class="submit-btn" value="Submit">
             </div>
         </div>
         <div class="progress-wrap">
@@ -75,7 +76,6 @@
                 </div>
             </div>
         </div>
-
     </form>
 
 </body>
