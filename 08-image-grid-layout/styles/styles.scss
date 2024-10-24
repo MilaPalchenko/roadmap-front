@@ -1,0 +1,32 @@
+.image-grid { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+
+    justify-items: center;
+}
+
+img { 
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.image-grid img:nth-child(1) { 
+    grid-area: 1/1/3/2;
+}
+.img-grid img:nth-child(2) { 
+    grid-area: 3/1/4/2;
+}
+.img-grid img:nth-child(3) { 
+    grid-area: 1/2/2/3;
+}
+.img-grid img:nth-child(4) { 
+    grid-area: 1/2/4/3;
+}
+.img-grid img:nth-child(5) { 
+    grid-area: 3/1/4/2;
+}
+.img-grid img:nth-child(6) { 
+    grid-area: 3/2/4/3;
+}
