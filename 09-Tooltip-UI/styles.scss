@@ -51,8 +51,6 @@ nav {
     transform: translateX(-50%);
     transition: opacity 0.5s ease;
     width: 320px;
-    z-index: 1;
-
     &::after { 
         position: absolute;
         top: 100%;
